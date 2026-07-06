@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://c73i80hyo3nm3"]
+
+[ext_resource type="Texture2D" uid="uid://b702adiqhflnt" path="res://Entorno/piso_parquet3.png" id="1_f54jf"]
+[ext_resource type="PackedScene" uid="uid://dtt0b4conukr2" path="res://Entorno/screen_led.glb" id="2_f54jf"]
+[ext_resource type="PackedScene" uid="uid://dv253cclkybp" path="res://Entorno/majesty_palm_plant.glb" id="3_lns33"]
+[ext_resource type="PackedScene" uid="uid://bc20c4klpq82j" path="res://Entorno/office-computer.glb" id="5_e0i5g"]
+[ext_resource type="PackedScene" uid="uid://bspmbwc54bqbf" path="res://Entorno/Pantalla 2/screen_led 2.glb" id="5_hvidm"]
+[ext_resource type="PackedScene" uid="uid://bkkx6dyc71vxj" path="res://Entorno/grey_sofa.glb" id="6_e0i5g"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i3q50"]
+albedo_texture = ExtResource("1_f54jf")
+uv1_scale = Vector3(10, 10, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_i3q50"]
+
+[sub_resource type="Environment" id="Environment_hvidm"]
+background_mode = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lns33"]
+albedo_color = Color(1, 0.99215686, 0.8156863, 1)
+uv1_scale = Vector3(10, 10, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f54jf"]
+albedo_color = Color(1, 0.99215686, 0.8156863, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hvidm"]
+albedo_color = Color(1, 0.99215686, 0.8156863, 1)
+
+[node name="Escenario-Levi" type="Node3D" unique_id=1629755613]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1858757253]
+transform = Transform3D(4, 0, 0, 0, 1, 0, 0, 0, 4, 0, -0.05, 0)
+material_override = SubResource("StandardMaterial3D_i3q50")
+mesh = SubResource("PlaneMesh_i3q50")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1860142481]
+transform = Transform3D(0.7071067, -0.4999999, 0.49999994, 0, 0.7071067, 0.7071067, -0.7071067, -0.4999999, 0.49999994, 0, 7.7129574, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=299892289]
+environment = SubResource("Environment_hvidm")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=466322315]
+transform = Transform3D(1, 0, 0, 0, 0.9999619, 0.008726535, 0, -0.008726535, 0.9999619, 0, 1.2, 2)
+keep_aspect = 0
+
+[node name="paredFondo" type="CSGBox3D" parent="." unique_id=972738110]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -3.9)
+use_collision = true
+size = Vector3(8, 8, 0.2)
+material = SubResource("StandardMaterial3D_lns33")
+
+[node name="paredFondo2" type="CSGBox3D" parent="." unique_id=358449007]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -4, 1, 0)
+use_collision = true
+size = Vector3(8, 8, 0.2)
+material = SubResource("StandardMaterial3D_f54jf")
+
+[node name="paredFondo3" type="CSGBox3D" parent="." unique_id=1237371405]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 4, 1, 0)
+use_collision = true
+size = Vector3(8, 8, 0.2)
+material = SubResource("StandardMaterial3D_hvidm")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1936681085]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.140602, 4, -2)
+light_energy = 2.0
+omni_range = 15.0
+
+[node name="lcd" parent="." unique_id=179619889 instance=ExtResource("2_f54jf")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 1, -1.5, 2, -3.7)
+
+[node name="Cube_Material_002_0" parent="lcd/Sketchfab_model/7fc53ad4cf094860b40511afbb586b59_fbx/RootNode/Cube" parent_id_path=PackedInt32Array(179619889, 303226135) index="1" unique_id=2146272166]
+transform = Transform3D(-4.3711385e-08, 0, -1, 0, 0.99999994, 0, 0.99999994, 0, -4.371139e-08, 0, 0, 0)
+
+[node name="planta" parent="." unique_id=1532302884 instance=ExtResource("3_lns33")]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 3.3, 0, -3)
+
+[node name="lcd2" parent="." unique_id=240237161 instance=ExtResource("5_hvidm")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 1, 1.5, 2, -3.7)
+
+[node name="Cube_Material_002_0" parent="lcd2/Sketchfab_model/7fc53ad4cf094860b40511afbb586b59_fbx/RootNode/Cube" parent_id_path=PackedInt32Array(240237161, 2026750979) index="1" unique_id=179922888]
+transform = Transform3D(-4.371139e-08, 8.742278e-08, 1, 0, -1, 8.742278e-08, 1, 3.821371e-15, 4.371139e-08, 0, 0, 0)
+
+[node name="Sketchfab_Scene2" parent="." unique_id=201832681 instance=ExtResource("5_e0i5g")]
+transform = Transform3D(-6.119594e-10, 0, 0.014, 0, 0.014, 0, -0.014, 0, -6.119594e-10, -2.3, 0, -1.5)
+
+[node name="Sketchfab_Scene" parent="." unique_id=351836761 instance=ExtResource("6_e0i5g")]
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 1.3, 0, -3)
+
+[editable path="lcd"]
+[editable path="lcd2"]
