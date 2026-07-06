@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://oau6he42meex"]
+
+[ext_resource type="Texture2D" uid="uid://jpda05dn2ycf" path="res://Entorno/poli3.jpg" id="1_xy8ag"]
+
+[resource]
+resource_name = "Material.002"
+albedo_texture = ExtResource("1_xy8ag")
+uv1_scale = Vector3(3, 4, 1)

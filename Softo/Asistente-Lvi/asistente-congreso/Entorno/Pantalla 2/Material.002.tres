@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://xvxv3yqajgi2"]
+
+[ext_resource type="Texture2D" uid="uid://culn3xjqd7qig" path="res://Entorno/congreso.png" id="1_rbaov"]
+
+[resource]
+resource_name = "Material.002"
+cull_mode = 2
+albedo_texture = ExtResource("1_rbaov")
+roughness = 0.9989574
+uv1_scale = Vector3(3, 4, 1)

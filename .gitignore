@@ -1,0 +1,11 @@
+# Ejecutables compilados
+*.exe
+
+# Archivos Godot exportados
+*.pck
+
+# Instaladores Godot
+*.zip
+
+# Carpetas de programas externos
+Programas , etc/

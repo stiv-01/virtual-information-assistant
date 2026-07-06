@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://jlqun3bongh8"]
+
+[ext_resource type="Texture2D" uid="uid://6kaqd0h3yf5d" path="res://Entorno/stylized_furniture_0.png" id="1_w5w67"]
+[ext_resource type="Texture2D" uid="uid://1f5t8w5oajd6" path="res://Entorno/stylized_furniture_1.png" id="2_t7gkt"]
+
+[resource]
+resource_name = "MAT_Desk"
+cull_mode = 2
+albedo_color = Color(0.6627451, 0.6627451, 0.6627451, 1)
+albedo_texture = ExtResource("1_w5w67")
+metallic = 1.0
+metallic_texture = ExtResource("2_t7gkt")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_t7gkt")
+roughness_texture_channel = 1
+ao_enabled = true
+ao_texture = ExtResource("2_t7gkt")

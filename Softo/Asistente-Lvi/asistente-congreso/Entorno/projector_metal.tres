@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bc0mdvpltel73"]
+
+[resource]
+resource_name = "projector_metal"
+cull_mode = 2
+albedo_color = Color(0.6025276, 0.6534536, 0.6799933, 1)
+roughness = 0.9011281

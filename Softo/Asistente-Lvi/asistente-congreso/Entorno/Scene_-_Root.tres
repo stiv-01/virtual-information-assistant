@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b11pjre4hcjtv"]
+
+[ext_resource type="Texture2D" uid="uid://culn3xjqd7qig" path="res://Entorno/congreso.png" id="1_602nx"]
+[ext_resource type="Texture2D" uid="uid://ds8pguo2mnasc" path="res://Entorno/projector_screen_7mb_1.png" id="2_yh8n1"]
+[ext_resource type="Texture2D" uid="uid://46jv7ueg73sm" path="res://Entorno/projector_screen_7mb_2.png" id="3_1td57"]
+
+[resource]
+resource_name = "Scene_-_Root"
+cull_mode = 2
+albedo_texture = ExtResource("1_602nx")
+metallic = 1.0
+metallic_texture = ExtResource("2_yh8n1")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_yh8n1")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_1td57")
+uv1_scale = Vector3(1, 2, 1)

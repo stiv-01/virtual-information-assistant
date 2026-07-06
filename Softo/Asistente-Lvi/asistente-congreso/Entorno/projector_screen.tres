@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://djuhtrq3vtprl"]
+
+[ext_resource type="Texture2D" uid="uid://culn3xjqd7qig" path="res://Entorno/congreso.png" id="1_ps5t1"]
+
+[resource]
+resource_name = "projector_screen"
+cull_mode = 2
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
+albedo_texture = ExtResource("1_ps5t1")
+roughness = 0.82111454
+uv1_scale = Vector3(1, 3, 1)

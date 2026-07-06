@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ynqjtrtl8oq3"]
+
+[ext_resource type="Texture2D" uid="uid://baflm6x5oksoo" path="res://Entorno/flag_poli2.png" id="1_50chv"]
+
+[resource]
+resource_name = "Root"
+albedo_texture = ExtResource("1_50chv")
+roughness = 0.6
+uv1_scale = Vector3(10, 10, 1)

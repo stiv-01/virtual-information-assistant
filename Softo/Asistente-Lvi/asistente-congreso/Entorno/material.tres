@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cqdbsta34q812"]
+
+[ext_resource type="Texture2D" uid="uid://cnxyvnfsaj48g" path="res://Entorno/tv_screen_0.png" id="1_p8mws"]
+[ext_resource type="Texture2D" uid="uid://81euq0sxs1j" path="res://Entorno/tv_screen_1.png" id="2_xj0lw"]
+[ext_resource type="Texture2D" uid="uid://eu5nivj2iukq" path="res://Entorno/tv_screen_2.png" id="3_3cimv"]
+
+[resource]
+resource_name = "material"
+cull_mode = 2
+albedo_texture = ExtResource("1_p8mws")
+metallic = 1.0
+metallic_texture = ExtResource("2_xj0lw")
+metallic_texture_channel = 2
+roughness = 0.19340701
+roughness_texture = ExtResource("2_xj0lw")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_3cimv")
