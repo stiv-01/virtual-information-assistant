@@ -1,4 +1,4 @@
-# Trabajo de Integración Curricular - Desarrollo e Implementación de un asistente virtual para brindar información de Congresos y/o Jornadas Científicas.
+# Desarrollo e Implementación de un asistente virtual para brindar información de Congresos y/o Jornadas Científicas.
 Desarrollado en Godot Engine 4 con Ollama y Phi-3 Mini
 # Resultados:
 <img width="455" height="255" alt="image" src="https://github.com/user-attachments/assets/c7766176-a8ea-4b15-9591-89ccbd3b0e27" />
